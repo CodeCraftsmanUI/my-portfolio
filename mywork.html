@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2" style="flex-basis: 75%;">
+                        <h1 class="sub-title">My Work</h1>
+                        <p>
+                            🚀 Crafting elegant code, one algorithm at a time! Passionate about transforming complex
+                            problems into elegant solutions. 🌟
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">
+                                Mini Projects
+                            </p>
+                            <p class="tab-links" onclick="opentab('Experience')">
+                                Intermediate Projects
+                            </p>
+                            <p class="tab-links" onclick="opentab('Education')">Advanced
+                                Projects</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><a href="https://counterapp-project.netlify.app/" style="text-decoration: none;"
+                                        target=”_blank”><span style="font-size: 16px;">Counter-App</span></a><br />
+                                    <!-- <h4>Interactive Counter Demo</h4> -->
+                                    <p>This is a practical demonstration of how to
+                                        manipulate HTML elements and respond to user actions using JavaScript. It begins
+                                        by grabbing certain elements from the webpage using CSS class
+                                        selectors.<br>These elements are:</p>
+                                    <ul>
+                                        <li>The counter display (count)</li>
+                                        <li>An input field to specify how much to change the count by (changeBy)</li>
+                                        <li>A button to reset the count to zero (resetbtn)</li>
+                                    </ul>
+                                    <p>So, in essence, this code sets up a basic counter with the ability to increment,
+                                        decrement, and reset theSo, in essence, this code sets up a basic counter with
+                                        the ability to increment, decrement, and reset the count, all based on user
+                                        interactions with the webpage.</p>
+                                </li>
+                                <li><a href="https://aamazonclonee.netlify.app/" style="text-decoration: none;"
+                                        target=”_blank”><span style="font-size: 16px;">Amazon Clone</span></a><br />
+                                    <!-- <h4>Amazon Clone</h4> -->
+                                    <p>This is a practical demonstration of Amazon Clone</p>
+                                </li>
+                                <li><a href="https://flex-box-challenge.netlify.app/" style="text-decoration: none;"
+                                        target=”_blank”><span
+                                            style="font-size: 16px;">flex-box-challenge</span></a><br />
+                                    <!-- <h4>Amazon Clone</h4> -->
+                                    <p>This is a practical demonstration of flex-box-challenge</p>
+                                </li>
+                                <li><a href="https://conquering-rsponsive-layout.netlify.app/"
+                                        style="text-decoration: none;" target=”_blank”><span
+                                            style="font-size: 16px;">conquering-rsponsive-layout</span></a><br />
+                                    <!-- <h4>Amazon Clone</h4> -->
+                                    <p>This is a practical demonstration of conquering-rsponsive-layout </p>
+                                </li>
+                                <li><a href="https://iporttfolio.netlify.app/" style="text-decoration: none;"
+                                        target=”_blank”><span style="font-size: 16px;">iporttfolio</span></a><br />
+                                    <!-- <h4>Amazon Clone</h4> -->
+                                    <p>This is a practical demonstration of iporttfolio site using AI Help. </p>
+                                </li>
+
+                                <!-- <li><span style="font-size: 19px;">Web Development</span><br />Web app Development</li>
+                                <li><span style="font-size: 19px;">App Development</span><br />Building android/ios apps
+                                </li> -->
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li>
+                                    <span>2024 - Current</span><br />Coming Soon!!!
+                                </li>
+                                <li><span>2024 - 2024</span><br />Coming Soon!!!</li>
+                                <li>
+                                    <span>2024 - 2024</span><br />Coming Soon!!!
+                                </li>
+                                <li>
+                                    <span>2024 - 2024</span><br />Coming Soon!!!
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li>
+                                    <span>2024</span><br />Coming Soon!!!
+                                </li>
+                                <li><span>2024</span><br />Coming Soon!!!</li>
+                                <li><span>2024</span><br />Coming Soon!!!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                copyright @ Arvind. Made with <i class="fa-solid fa-heart"></i> by our
+                company
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
